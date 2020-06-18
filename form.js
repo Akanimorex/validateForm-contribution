@@ -8,7 +8,7 @@ const isValid =()=>{
     console.log(details.name)
 
     if (details.name || details.email || details.password === ""){
-        document.querySelector('#name-error').textContent = `error`
+        document.querySelector('#name-error').textContent = `you left a field blank`
         return false;
 
     }
@@ -22,7 +22,7 @@ const validate =(event)=>{
         return true;
 
         // clear form
-        
+
         document.querySelector('#name-error').textContent = ""
 
         console.log('done')
